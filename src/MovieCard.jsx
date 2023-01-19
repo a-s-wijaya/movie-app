@@ -19,7 +19,7 @@ const MovieCard = ({ movie }) => {
         <Col className="px-3 mb-4">
           <Badge bg="dark">{movie.Year}</Badge>
           <Badge
-            bg={movie.Type == "movie" ? "danger" : "warning"}
+            bg={movie.Type === "movie" ? "danger" : "warning"}
             className="ms-1">
             {movie.Type}
           </Badge>
